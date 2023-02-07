@@ -35,7 +35,7 @@ runs:
           Windows) pattern="*windows-x86_64.zip" ;;
         esac
 
-        gh release download ${{ inputs.version }} --repo LPGhatguy/aftman --pattern $pattern
+        gh release download ${{ inputs.version }} --repo BadimoOrg/aftman --pattern $pattern
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
